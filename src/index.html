@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Journal de l'étudiant 2024</title>
+    <link rel="stylesheet" href="./styles/output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/icons/logo.png" type="image/x-icon">
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+<nav class="w-full border-gray-200 absolute top-0 left-0 z-10">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./assets/icons/logo.png" class="h-20" alt="Logo" />
+            <span class="self-center text-4xl font-semibold whitespace-nowrap">Journal de l'IUT</span>
+        </div>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                <li>
+                    <a href="#" class="navbar-selected" aria-current="page">Accueil</a>
+                </li>
+                <li>
+                    <a href="./pages/studentLife.html" class="navbar-unselected" >La vie étudiante</a>
+                </li>
+                <li>
+                    <a href="./pages/itsector.html" class="navbar-unselected">La fillière informatique</a>
+                </li>
+                <li>
+                    <a href="./pages/studyiniut.html" class="navbar-unselected">Etudier à l'IUT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="w-full h-[100vh] mt-[7.5%] min-h-[95vh] flex justify-center">
+
+    <img src="./assets/hexa.png" alt="hexa" class="absolute top-0 right-0 w-[30%] translate-x-1/4 -translate-y-1/4 opacity-30">
+    <img src="./assets/hexa.png" alt="hexa" class="absolute bottom-0 left-0 w-[30%] -translate-x-1/4 translate-y-1/4 opacity-30">
+
+    <div class="flex flex-col items-center w-1/2 h-[75vh] bg-white rounded-lg shadow-2xl">
+        <h1 class="text-4xl font-bold">Bienvenue sur le Journal de l'IUT</h1>
+        <p class="text-lg text-center">Découvrez la vie étudiante, la filière informatique et comment étudier à l'IUT</p>
+        <br>
+        <p class="w-4/5">De plus en plus de jeunes rejoignent l’IUT et choisissent l’informatique comme domaine d’étude. Qui sont-t-ils et d’où viennent-t-ils ? Découvrez le profil type de ces étudiants et voyez par vous-même !<br>
+            Que faire après son BUT informatique ? C’est justement la question universelle que se pose chacun de ces étudiants pour son avenir. On vous dit tout sur les débouchés de la formation : secteurs, métiers, poursuites d’études. Vous saurez tout !<br>
+            <br>
+            La vie dans un IUT peut s’avérer ennuyante et fade… Pas d’inquiétude ! Le bureau des étudiants est là pour sauver l’ambiance ! Il fait partie intégrante de la vie universitaire et propose nombre d’activités et autres événements pour animer le quotidien : soirées, tournois, etc… Des divertissements originaux et intéressants qui poussent vers la socialisation.<br><br>
+            Notre diplôme se caractérise aussi par les projets étudiants de mise en situation professionnelle : les SAE. Ces projets aux thèmes divers sont destinés à évaluer les compétences des jeunes développeurs et les mettre dans une situation proche de ce qu’ils pourraient rencontrer en milieu professionnel. Quelle en est l’utilité ? Comment le lien avec le monde professionnel est fait ? Qu’en pensent les étudiants ?<br>
+            <br>
+            L’alternance ajoute également de nombreux avantages à notre IUT. Comment est-elle gérée par l’IUT ? Comment les étudiants s’organisent-ils ? En bonus des réponses à vos questions, nous vous donnerons des conseils d’alternants !<br>
+            À côté de l’alternance, la mobilité à l’international est un autre parcours particulier. Notre université bénéficie de nombreux partenaires autour du globe pour la plupart des filières, nous octroyant beaucoup d’avantages et d'opportunités. Mais quelles sont-elles ? Quelles sont les destinations ? Quel est l’avis des étudiants ?<br><br>
+            Nous conclurons le journal sur un court article au sujet des nouvelles technologies ; l’intelligence artificielle s’installant au quotidien, particulièrement dans les études. Effectivement, l’IA générative est de plus en plus employée, et peut être à mauvais escient, et l’on se demande jusqu’où iront les conséquences. Quels sont les enjeux de l’IA ? Quels usages en font les étudiants ?<br>
+        </p>
+    </div>
+</div>
+
+<footer class="absolute bottom-0 w-2/3 right-0 rounded-tl-lg">
+    <div class="flex justify-around items-center h-20 bg-gray-800 text-white w-full">
+        <p>© 2024 - Journal de l'IUT</p>
+        <ul class="flex space-x-16">
+            <li class="icon" onclick="window.open('https://iut.univ-amu.fr/fr/formations/bachelor-universitaire-de-technologie/but-informatique/but-info-aix', '_blank')">
+                <img src="./assets/icons/site.svg" alt="site icon">
+                <p>Site Web</p>
+            </li>
+
+            <li class="icon" onclick="window.open('https://www.instagram.com/iutaixmars?igsh=YXM3Y2syMHI0bXNr', '_blank')">
+                <img src="./assets/icons/instagram.svg" alt="insta icon">
+                <p>Instagram</p>
+            </li>
+
+            <li class="icon" onclick="window.open('https://www.tiktok.com/@iutaixmars?_t=8ky9l0aJzgP&_r=1', '_blank')">
+                <img src="./assets/icons/tiktok.svg" alt="tiktok icon">
+                <p>Tiktok</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
