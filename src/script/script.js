@@ -5,8 +5,7 @@ document.querySelectorAll('.openModalButton').forEach((button) => {
     button.addEventListener('click', () => {
         titleModal.innerHTML = button.getAttribute('data-title');
         let embed = document.createElement('embed');
-        embed.src = button.getAttribute('data-src')+ "" +
-            "";
+        embed.src = button.getAttribute('data-src')+ "#toolbar=0"
         embed.width = "100%";
         embed.height = "800";
         embed.type = "application/pdf";
